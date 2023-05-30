@@ -94,10 +94,11 @@ nav li a:hover::before {
     /* Disable horizontal scroll */
 }
 
+/*
 .logo {
     height: 58px;
     width: 100%;
-}
+}*/
 
 .skills {
     font-size: large;
