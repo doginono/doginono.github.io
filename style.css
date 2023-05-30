@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Work Sans" sans-serif;
+    font-weight: 400;
+}
+
+/*
+div {
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 5px solid lime;
+}
+*/
+/*ince ayar sonra*/
+header {
+    background: black;
+    height: 58px;
+    padding-bottom: 10px;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav {
+    margin: auto;
+    width: 75%;
+    /*display: "inline";*/
+}
+
+nav ul {
+    margin: 0;
+    padding: 5px 20px;
+    /*dot deleted*/
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    color: aliceblue;
+    position: relative;
+}
+
+nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+nav li a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #c1da05;
+    position: absolute;
+
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before {
+    width: 100%;
+}
+
+.sidebar {
+    margin: 58px 0;
+    width: 15%;
+    background: cyan;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: block;
+    position: fixed;
+    z-index: -1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: cyan;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+}
+
+.logo {
+    height: 58px;
+    width: 100%;
+}
+
+.skills {
+    font-size: large;
+    list-style: none;
+    padding: 0 10px;
+}
