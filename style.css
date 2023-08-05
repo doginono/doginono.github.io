@@ -17,6 +17,10 @@ header {
     background: black;
     height: 58px;
     padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
 }
 
 header::after {
@@ -27,25 +31,24 @@ header::after {
 
 
 nav {
+
     margin: auto;
     width: 100%;
-    /*display: "inline";*/
 }
 
 nav ul {
-    margin: 0;
-    padding: 5px 20px;
-    /*dot deleted*/
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
     list-style: none;
 }
 
+
 nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 20px;
     color: aliceblue;
     position: relative;
 }
+
 
 nav li a {
     color: aliceblue;
@@ -62,10 +65,9 @@ nav li a:before {
     content: '';
     display: block;
     height: 5px;
-    background-color: #c1da05;
+    background-color: yellow;
     position: absolute;
-
-    top: 0;
+    top: -5px;
     width: 0%;
     transition: all ease-in-out 250ms;
 }
@@ -77,20 +79,22 @@ nav li a:hover::before {
 .sidebar {
     margin: 58px 0;
     width: 15%;
-    background: cyan;
+    background: rgb(0, 52, 52);
     height: 100%;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 3%;
     display: block;
     position: fixed;
-    z-index: -1;
+
+    z-index: 1;
     /* Stay on top */
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: cyan;
+    background-color: rgb(0, 38, 38);
     /* Black */
     overflow-x: hidden;
+    color: white;
     /* Disable horizontal scroll */
 }
 
@@ -108,13 +112,14 @@ nav li a:hover::before {
 
 .main {
     font-size: medium;
-    margin: 68px 0;
-    width: 100%;
+    margin: 68px 0 0 0;
+    width: 82%;
     background: cyan;
-    height: 100%;
-
+    height: 110%;
     display: block;
     position: fixed;
+    left: 18%;
+    padding: 0% 0% 0% 0%;
     z-index: -1;
     /* Stay on top */
     top: 0;
@@ -127,13 +132,43 @@ nav li a:hover::before {
 
 .curvedBox {
     /*center the box*/
+    padding: 0;
     margin: 0 auto;
     border-radius: 25px;
     border: 2px solid #000000;
-    padding: 20px;
+    width: 70%;
+    height: 80%;
+    background-color: #00aeff;
+}
+
+
+.main2 {
+    font-size: medium;
+    margin: 68px 0;
+    width: 100%;
+    background: cyan;
+    height: 110%;
+    display: block;
+    position: fixed;
+    z-index: -1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    background-color: rgb(0, 0, 0);
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+}
+
+.curvedBox2 {
+    /*center the box*/
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 10px;
     /*Let the box be the 75 percent of the window width*/
-    width: 50%;
-    height: 75%;
+    width: 70%;
+    height: 80%;
     /*Let the box be the 75 percent of the window height*/
-    background-color: #ffffff;
+    background-color: #00aeff;
 }
